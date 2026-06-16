@@ -6,8 +6,8 @@ function getKey(k, fallback) {
   return localStorage.getItem('et_' + k) || fallback;
 }
 
-const SUPABASE_URL      = getKey('s-url',  'YOUR_SUPABASE_URL');
-const SUPABASE_ANON_KEY = getKey('s-key',  'YOUR_SUPABASE_ANON_KEY');
+const SUPABASE_URL      = getKey('s-url',  'https://ajsepyqjxxaunaitbeth.supabase.co');
+const SUPABASE_ANON_KEY = getKey('s-key',  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFqc2VweXFqeHhhdW5haXRiZXRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2MTg0NzcsImV4cCI6MjA5NzE5NDQ3N30.1pVhuATEEyBdbx9muxXhfr1ATWHgjbvJf1lvrt99KW4');
 
 const { createClient } = supabase;
 const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
